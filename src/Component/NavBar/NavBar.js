@@ -1,10 +1,9 @@
 import { Home } from '@mui/icons-material'
-import { Avatar, AvatarGroup, Grid } from '@mui/material'
+import { Avatar, Grid } from '@mui/material'
 import React, { Component } from 'react'
 import fblogo from '../../images/images/logo.png'
 import PlayCircleSharpIcon from '@mui/icons-material/PlayCircleSharp';
 import MusicNoteSharpIcon from '@mui/icons-material/MusicNoteSharp';
-import ChatBubbleSharpIcon from '@mui/icons-material/ChatBubbleSharp';
 import MarkChatUnreadSharpIcon from '@mui/icons-material/MarkChatUnreadSharp';
 import './NavBar.css'
 import { NavLink } from 'react-router-dom';
@@ -22,7 +21,7 @@ class NavBar extends Component {
             <Grid className='navbar_main' container>
                     <Grid item xs={3}>
                           <div className='navbar_leftbar'>
-                              <img src={fblogo} width="40px" className='navbar_logo'/>
+                              <img src={fblogo} width="40px" className='navbar_logo' alt=''/>
                               <input className='navbar_search' type="text" placeholder='Search Facebook'/>
                           </div>
                     </Grid>

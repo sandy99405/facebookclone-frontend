@@ -1,7 +1,6 @@
 import { Avatar, IconButton, Menu, MenuItem, Paper } from '@mui/material'
 import React, { Component } from 'react'
 import './PostContainer.css'
-import fblogo from '../../../../images/images/logo.png'
 import like from '../../../../images/images/like.png'
 import likebutton from '../../../../images/images/likebutton.png'
 import commentbutton from '../../../../images/images/comment.png'
@@ -90,12 +89,12 @@ class Post extends Component {
             </div>
             <div className='post_image'>
                 {
-                  this.isImageAvailable(this.props.object.postImgURL) ? <img width="600px" src={this.props.object.postImgURL}/> : <span></span>
+                  this.isImageAvailable(this.props.object.postImgURL) ? <img alt='' width="600px" src={this.props.object.postImgURL}/> : <span></span>
                 }
             </div>
             <div className='post_likeCountContainer'>
                   <div className='post_like'>
-                      <img className='post_img' src={like}/>
+                      <img className='post_img' src={like} alt='' />
                   </div>
                   <div className='post_likecount'>
                        25
@@ -104,7 +103,7 @@ class Post extends Component {
             <div className='post_likeshare'>
                 <div className='post_tab'>
                     <div className='post_tabfirst'>
-                        <img className='post_tabimg' src={likebutton}/>
+                        <img className='post_tabimg' src={likebutton} alt=''/>
                     </div>
                     <div className='post_tabtext'>
                         Like
@@ -112,7 +111,7 @@ class Post extends Component {
                 </div>
                 <div className='post_tab'>
                     <div className='post_tabfirst'>
-                        <img className='post_tabimg' src={commentbutton}/>
+                        <img className='post_tabimg' src={commentbutton} alt='' />
                     </div>
                     <div className='post_tabtext'>
                         Comment
@@ -120,7 +119,7 @@ class Post extends Component {
                 </div>
                 <div className='post_tab'>
                     <div className='post_tabfirst'>
-                        <img className='post_tabimg' src={sharebutton}/>
+                        <img className='post_tabimg' src={sharebutton} alt=''/>
                     </div>
                     <div className='post_tabtext'>
                         Share

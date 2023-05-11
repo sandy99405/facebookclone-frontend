@@ -1,9 +1,7 @@
 import { Home, VideoLibrary} from '@mui/icons-material'
 
-import { NavLink, useNavigate } from 'react-router-dom'
-import { Grid, Paper } from '@mui/material';
+import { NavLink } from 'react-router-dom'
 import MusicNoteSharpIcon from '@mui/icons-material/MusicNoteSharp';
-import MarkChatUnreadSharpIcon from '@mui/icons-material/MarkChatUnreadSharp';
 import './VideoNav.css'
 import PlayCircleSharpIcon from '@mui/icons-material/PlayCircleSharp';
 import PersonOutlineSharpIcon from '@mui/icons-material/PersonOutlineSharp';

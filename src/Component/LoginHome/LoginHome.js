@@ -1,6 +1,6 @@
 import { Grid, Paper } from '@mui/material';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import react, { Component } from 'react'
+import  { Component } from 'react'
 import {auth} from '../../config/firebase';
 
 class LoginHome extends Component {
@@ -50,18 +50,16 @@ class LoginHome extends Component {
             fetch("http://localhost:8080/api/userService/save",requestOptions)
             .then(response => response.json())
             .then(data =>{
-                var user = userCredential.user;
                 localStorage.setItem("user",JSON.stringify(data));
                 window.location.reload();
             })
             .catch(error =>{
-
+                console.log(error)
             })
             // ...
         })
         .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
+            console.log(error)
             // ..
         });
     }
@@ -98,8 +96,7 @@ class LoginHome extends Component {
             }) */
         })
         .catch((error)=>{
-        var errorCode = error.code;
-        var errorMessage = error.message;
+             console.log(error)
         });
     }
 
@@ -111,7 +108,7 @@ class LoginHome extends Component {
             <Grid className="main_content" container>
                 <Grid item xs={7}>
                     <div className="fblogo">
-                        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="300px"/>
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="300px" alt=''/>
                     </div>
                     <div>
                         <h1 className="text">Facebook helps you connect and share with the people in your life</h1>
@@ -120,7 +117,7 @@ class LoginHome extends Component {
                 <Grid item xs={3}>
                     <Paper /* className="logincard_container" */>
                     {
-                        this.state.signIn == true ? 
+                        this.state.signIn === true ? 
       (                  <div /* container="login_panel" */>
                             <div>
                                 <input onChange={(event)=>(this.setState({signin_email:event.currentTarget.value}))} type="text" /* className="login_input" */ placeholder="Email_address"/>

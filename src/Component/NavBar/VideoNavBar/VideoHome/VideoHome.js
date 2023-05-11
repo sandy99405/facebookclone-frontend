@@ -1,4 +1,3 @@
-import { Grid } from '@mui/material'
 import React, { Component } from 'react'
 import './VideoHome.css'
 import VideoPost from './VideoPost'
