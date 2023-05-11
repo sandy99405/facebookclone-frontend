@@ -1,0 +1,18 @@
+.video_library{
+    background-color: #0F0F0F;
+    width: 1390px;
+}
+
+.player_wrapper{
+    overflow-y: scroll;
+    height: 655px;
+    transform: translateX(100px);
+    background-color: #0F0F0F;
+}
+
+.video_container{
+    border-radius: 25px;
+    width: 600px;
+    transform: translateX(-50px);
+}
+

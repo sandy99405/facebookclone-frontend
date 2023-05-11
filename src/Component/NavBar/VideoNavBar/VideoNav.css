@@ -1,0 +1,16 @@
+.videobar_main{
+   border-left: 1px solid #DBDBDE;
+   height: 655px;
+   float: right;
+   background-color: #0F0F0F;
+}
+
+.videobar_tabs{
+    margin-top: 45px;
+    width: 45px !important;
+    height: 120px !important;
+}
+
+.filler{
+    background-color: blue;
+}

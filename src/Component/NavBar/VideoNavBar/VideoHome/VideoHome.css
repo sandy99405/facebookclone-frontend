@@ -1,0 +1,36 @@
+.video_library{
+    background-color: #0F0F0F;
+    width: 1390px;
+}
+
+.player_wrapper{
+    overflow-y: scroll;
+    height: 655px;
+    transform: translateX(100px);
+    background-color: #0F0F0F;
+}
+
+.videohome_container{
+    border-radius: 15px;
+    width: 350px;
+    transform: translateX(-50px);
+}
+
+.video_title{
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.videohome_div{
+    margin: 50px;
+}
+
+.videohome_detailsdiv{
+    display: flex;
+    transform: translateX(-40px);
+}
+
+.videohome_channelicon{
+    margin-top: 10px;
+}
