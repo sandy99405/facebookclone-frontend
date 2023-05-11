@@ -5,7 +5,7 @@
 
 .player_wrapper{
     overflow-y: scroll;
-    height: 655px;
+    height: 645px;
     transform: translateX(100px);
     background-color: #0F0F0F;
 }

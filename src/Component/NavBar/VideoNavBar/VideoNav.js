@@ -6,6 +6,7 @@ import MusicNoteSharpIcon from '@mui/icons-material/MusicNoteSharp';
 import MarkChatUnreadSharpIcon from '@mui/icons-material/MarkChatUnreadSharp';
 import './VideoNav.css'
 import PlayCircleSharpIcon from '@mui/icons-material/PlayCircleSharp';
+import PersonOutlineSharpIcon from '@mui/icons-material/PersonOutlineSharp';
 
 
 import React from 'react'
@@ -26,6 +27,9 @@ function VideoNav() {
                             </div>
                             <div className="videobar_tabs">
                             <NavLink to="library"> <VideoLibrary/> </NavLink>
+                            </div>
+                            <div className="videobar_tabs">
+                            <NavLink to="library"> <PersonOutlineSharpIcon/> </NavLink>
                             </div>
                         </div>
                         </nav>

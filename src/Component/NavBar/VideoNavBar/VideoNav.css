@@ -6,11 +6,15 @@
 }
 
 .videobar_tabs{
-    margin-top: 45px;
+    margin-top: 10px;
     width: 45px !important;
     height: 120px !important;
 }
 
 .filler{
     background-color: blue;
+}
+
+.videobar_container{
+    transform: translateY(40px);
 }
