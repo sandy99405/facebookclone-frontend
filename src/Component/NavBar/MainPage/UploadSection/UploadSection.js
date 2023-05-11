@@ -79,8 +79,8 @@ class UploadSection extends Component {
       <div>
         <Dialog onClose={this.handleClose} aria-labelledby="simple-dialog-title" className='upload_dialogbox' open={this.state.open}>
           <div className='upload_header' >Create Post</div>
-            <input  onChange={(event)=>this.state.description=event.currentTarget.value} type='text' className='upload_textbox' placeholder="What's on your mind?"/>
-            <img src={this.state.uploadImage} className='upload_preview'/>
+            <input  onChange={(event)=>(this.setState({description : event.currentTarget.value}))} type='text' className='upload_textbox' placeholder="What's on your mind?"/>
+            <img src={this.state.uploadImage} className='upload_preview' alt=''/>
             <input type="button" value="Post" onClick={(event)=>this.uploadToFirebase(event)} className='upload_button'/>
          </Dialog>
         <Paper className='upload_container'>
@@ -94,18 +94,18 @@ class UploadSection extends Component {
         </div>
         <div className='upload_footer'>
             <div className='upload_tabs'>
-               <img src={live} width="30px"/>
+               <img src={live} width="30px" alt=''/>
                <div className='upload_text'>Live Video</div>
             </div>
             <div className='upload_tabs'>
               <label htmlFor="file-upload" className='upload_tabs'>
-              <img src={image} width="30px"/>
+              <img src={image} width="30px" alt=''/>
                <div className='upload_text'>Photo/Video</div>
               </label>
               <input type="file" id="file-upload" onChange={(event)=>this.openDialog(event)}/>
             </div>
             <div className='upload_tabs'>
-               <img src={feeling} width="30px"/>
+               <img src={feeling} width="30px" alt=''/>
                <div className='upload_text'>Feeling/Activity</div>
             </div>
         </div>
