@@ -6,7 +6,7 @@ class VideoLibrary extends Component {
     return (
       <div className='video_library'>        
                 <div className='player_wrapper'>
-                  
+                       <h1 className='heading'>Hello Sandy</h1>
                 </div>
       </div>
     )

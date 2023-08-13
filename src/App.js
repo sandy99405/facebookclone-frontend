@@ -6,7 +6,9 @@ import NavBar from './Component/NavBar/NavBar';
 import {Routes, Route} from 'react-router-dom'
 import VideoPage from './Component/NavBar/VideoNavBar/VideoPage/VideoPage';
 import MusicPage from './Component/NavBar/MusicPage/MusicPage';
-import ChatPage from './Component/NavBar/ChatPage/ChatPage';
+
+import ChatHome from './Component/NavBar/ChatPage/ChatHome';
+import Home from './Component/NavBar/ChatPage/Home';
 
 function App() {
   return (
@@ -19,10 +21,9 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Layout/>}></Route>
             <Route path="/facebookvideos/*" element={<VideoPage/>}>
-               {/*  <Route path='/facebookvideos/library'/> */}
             </Route> 
             <Route path="/facebookmusic" element={<MusicPage/>}></Route> 
-            <Route path="/facebookchat" element={<ChatPage/>}></Route> 
+            <Route path="/facebookchat" element={<Home/>}></Route> 
           </Routes>
           <NavBar />
           </>
