@@ -1,8 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 ### Purpose
 
 This is a web application that I am building to practice my React skills.
@@ -15,7 +10,7 @@ Primarily the website is a one time login application which doesn't ask you to l
 
 ### Aim
 
-The main aim of this site is to provide all functionalities and bring all the streaming , social media platforms into a single atmosphere which will make the user experience much more fun and easy to use.
+The main aim of this site is to provide all functionalities and bring all the streaming , social media platforms into a single atmosphere where the user experience becomes much more fun, easy and enthusiastic.
 
 
 
